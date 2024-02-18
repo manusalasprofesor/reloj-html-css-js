@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #2c2f3b;
+}
+
+.container{
+    border: 18px solid rgb(0, 240, 240);
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: 48px;
+    background: rgb(36, 37, 51);
+}
+
+.date-container{
+    margin-top: 16px;
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.blink-colon{
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+    0%,
+    100%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0.4;
+    }
+}
